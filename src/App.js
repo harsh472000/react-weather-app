@@ -101,6 +101,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <h1>Weather App</h1>
         <Form loadweather={this.getWeather} error={this.state.error}/>
         <Weather city={this.state.city} country={this.state.country} temp_celsius={this.state.celsius} temp_max={this.state.temp_max} temp_min={this.state.temp_min} description={this.state.description} weathericon={this.state.icon}/> 
       </div>
